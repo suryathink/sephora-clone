@@ -38,9 +38,10 @@
             position: absolute;
             left: 50%;
             top: -50%;
+            z-index: 9;
             box-shadow: 0px 0px 10px 3px #ccc;
             transform: translate(-50%, -50%);
-            transition: 2s;
+            transition: 0.5s;
         }
 
         .loginform input {
@@ -69,11 +70,12 @@
             line-height: 30px;
         }
 
-        .showoverlay{
+        .showoverlay {
             opacity: 1;
+            z-index: 1;
         }
 
-        .showloginform{
+        .showloginform {
             top: 50%;
         }
     </style>
@@ -83,7 +85,7 @@
     <h2>Login Modal</h2>
     <button class="btn-login">Login</button>
 
-    <div class="overlay"></div>
+    <div class="overlay" onclick="closeModal()"></div>
     <div class="loginform">
         <span> &times; </span>
         <form action="">
@@ -106,4 +108,27 @@
 
 <script>
 
+
+    let showModal = () => {
+        document.querySelector(".overlay").classList.add("showoverlay")
+        document.querySelector(".loginform").classList.add("showloginform")
+
+    }
+
+    let closeModal = () => {
+        document.querySelector(".overlay").classList.remove("showoverlay")
+        document.querySelector(".loginform").classList.remove("showloginform")
+
+    }
+
+
+
+    let btnlogin = document.querySelector(".btn-login");
+
+    btnlogin.addEventListener("click", showModal)
+
+
+    let close = document.querySelector("span");
+
+    close.addEventListener("click", closeModal)
 </script>
