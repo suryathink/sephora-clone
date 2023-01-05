@@ -30,9 +30,9 @@
             opacity: 0;
             /* transition: 1s; */
         }
-
+        /* original class loginform  */
         .loginform {
-            width: 350px;
+            width: 430px;
             background-color: white;
             padding: 30px 20px;
             position: absolute;
@@ -42,19 +42,27 @@
             box-shadow: 0px 0px 10px 3px #ccc;
             transform: translate(-50%, -50%);
             transition: 0.5s;
+            border-radius: 5px;
         }
 
         .loginform input {
             width: 100%;
             margin-bottom: 15px;
-            height: 35px;
+            height: 48px;
+            border: none;
+            padding-left: 10px;
+            /* border: 1px solid whitesmoke; */
         }
 
         .loginform button {
             background-color: black;
             color: white;
             padding: 10px 15px;
+            width: 55%;
+            border-radius: 25px;
         }
+
+        
 
         .loginform span {
             position: absolute;
@@ -62,9 +70,10 @@
             width: 30px;
             height: 30px;
             cursor: pointer;
-            background-color: green;
+            /* background-color: green; */
             text-align: center;
-            color: white;
+            color: black;
+            font-size: 32px;
             text-align: center;
             top: 0px;
             line-height: 30px;
@@ -78,29 +87,92 @@
         .showloginform {
             top: 50%;
         }
+
+        #forgot-password {
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #new-account {
+            margin-top: 30px;
+        }
+
+        #termscond {
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        #createAccount {
+            background-color: whitesmoke;
+            color: black;
+            padding: 10px 15px;
+            width: 55%;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
-    <h2>Login Modal YT</h2>
+    <!-- 
+        Sign In
+Sign in or create an account 
+to enjoy FREE standard 
+shipping on all orders.
+
+element.style {
+    width: 18px;
+    height: 12px;
+}
+     -->
+
+    <h2>Login Modal</h2>
     <button class="btn-login">Login</button>
 
     <div class="overlay" onclick="closeModal()"></div>
     <div class="loginform">
         <span> &times; </span>
+        <h4>Sign In</h4>
+        <br>
+        <p style="font-size: 14px;">Sign in or create an account
+            to enjoy <bold style="font-weight:bold">FREE standard
+                shipping </bold> on all orders.</p>
+        <br>
         <form action="">
             <div>
-                <label for="">Username</label>
-                <input type="text" />
+                <!-- <label for="">Username</label> -->
+                <input placeholder="Email Address*" type="text" required />
             </div>
 
             <div>
-                <label for="">Password</label>
-                <input type="password" />
+                <!-- <label for="">Password</label> -->
+                <input placeholder="Password*" type="password" required />
             </div>
 
-            <button>LOGIN</button>
+            <div id="forgot-password">
+                <p><input style="width: 18px; height: 12px;" type="checkbox"> Keep me signed in</p>
+                <p> <a style="text-decoration: none;" href="#"> Forgot password?</a></p>
+            </div>
+            <br>
+            <button>Sign In</button>
         </form>
+
+        <div>
+
+            <h5 id="new-account">New to Sephora?</h5>
+
+            <button id="createAccount">Create Account</button>
+        </div>
+
+
+        <div id="termscond">
+            <p><a href="#"> Terms of Use </a> & <a href="#"> Privacy Policy</a></p>
+
+        </div>
     </div>
 </body>
 
