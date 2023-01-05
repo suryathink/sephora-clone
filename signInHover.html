@@ -93,7 +93,7 @@
             width: 19vw;
             height: auto;
             overflow-y: scroll;
-            overflow-x: hidden;
+            /* overflow-x: hidden; */
             line-height: 1.7vh;
             height: 60vh;
             border: 0.1px solid #ccc;
@@ -222,7 +222,10 @@
 
         #paraDiv {
             box-sizing: border-box;
-            padding: 1vh 0.3vw;
+            padding: 4% 8% ;
+            
+            /* padding: 1vh 0.3vw; */
+            font-size: 14px;
         }
 
         #beauty {
@@ -259,7 +262,7 @@
             width: 19vw;
             height: auto;
             overflow-y: scroll;
-            overflow-x: hidden;
+            /* overflow-x: hidden; */
             line-height: 1.7vh;
             height: 60vh;
             border: 0.1px solid #ccc;
@@ -283,6 +286,7 @@
             align-items: center;
             font-size: 1.5vh;
             line-height: 2.5vh;
+            margin: px;
         }
 
         #logoOFsepgora {
@@ -335,23 +339,26 @@
 
         .listFlx>div:nth-child(2)>p:nth-child(2) {
             color: rgb(102, 102, 102);
-            font-size: 1.5vh;
+            font-size:14px;
         }
 
         .listFlx>div:nth-child(2)>p:nth-child(1):hover {
             text-decoration: underline;
         }
 
-        /* #signOut {
-            text-decoration: underline;
-            padding-left: 0.78vw;
-            padding-top: 1.64vh;
-        } */
+        #signInHover{
+            width: 300px;
+        }
+
+        .btyDIV img{
+            margin: 17% 0 0 17%;
+        }
+
     </style>
 </head>
 
 <body>
-    <div>
+    <div id="signInHover">
         <div id="hovMainDiv">
             <div class="btyDIV">
                 <div><img
