@@ -95,12 +95,12 @@ function priceSort(){
     if(selected=="all"){
         sortPrices=fragranceItems;
     }
-    else if(selected=="lth"){
+    if(selected=="lth"){
         sortPrices=fragranceItems.sort(function(a, b){
             return a.price-b.price;
         })
     }
-    else if(selected=="htl"){
+    if(selected=="htl"){
         sortPrices=fragranceItems.sort(function(a, b){
             return b.price-a.price;
         })
@@ -109,17 +109,42 @@ function priceSort(){
     displayItems(sortPrices);
 }
 
+const searchFilter=()=>{
+    let searchBox=document.getElementById("input").value.toUpperCase();
+    console.log(searchBox);
+    let products=document.querySelectorAll(".pro");
+    let pname=document.querySelector(".name");
+    
+    pname.forEach(element => {
+        console.log(pname[element]);
+    });
+    // {
+    //     let match=products[i].querySelector(".name")[0];
+    //     let textValue=match.textContent || match.innerHTML;
+            
+    //         if(textValue.toUpperCase().indexOf(searchBox)>-1){
+    //             products[i].style.display="";
+    //         }
+    //         else{
+    //             products[i].style.display="none";
+    //         }
+    //     console.log(products[i]);
+    // }
+}
+
 function displayItems(arr){
     var container=document.getElementById("items");
     document.getElementById("items").innerHTML=null;
     arr.forEach(el => {
         var div=document.createElement("div");
+        div.setAttribute("class", "pro");
         var img=document.createElement("img");
         img.src=el.imageUrl;
         var brand=document.createElement("p");
         brand.setAttribute("id","brand");
         brand.textContent=el.brand;
         var name=document.createElement("p");
+        name.setAttribute("class", "name");
         name.textContent=el.name;
         var div_price_rating=document.createElement("div");
         var rating=document.createElement("p");
