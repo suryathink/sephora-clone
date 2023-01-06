@@ -1,61 +1,75 @@
 var items=JSON.parse(localStorage.getItem("itemsData"))||[];
-var fragranceItems=itemsData.filter(function(elem){
-    return elem.category=="fragrance";
+var makeupItems=itemsData.filter(function(elem){
+    return elem.category=="makeup";
 })
 // console.log(fragranceItems);
 let count=0;
-for(const key in fragranceItems){
+for(const key in makeupItems){
     count++;
 }
 document.getElementById("count").textContent=count;
-displayItems(fragranceItems);
+displayItems(makeupItems);
 
-document.getElementById("fragrance").addEventListener("click", fragrancePro);
+document.getElementById("makeup").addEventListener("click", fragrancePro);
 function fragrancePro(){
     let count=0;
-    for(const key in fragranceItems){
+    for(const key in makeupItems){
         count++;
     }
 
     document.getElementById("count").textContent=count;
-    displayItems(fragranceItems);
+    displayItems(makeupItems);
 }
 
-document.getElementById("women").addEventListener("click", filterWomen);
-function filterWomen(){
-    let womenItems=itemsData.filter(function(elem){
-        return elem.type=="women";
+document.getElementById("face").addEventListener("click", filterFace);
+function filterFace(){
+    let faceItems=itemsData.filter(function(elem){
+        return elem.type=="face";
     })
     let count=0;
-    for(const key in womenItems){
+    for(const key in faceItems){
         count++;
     }
     document.getElementById("count").textContent=count;
-    displayItems(womenItems); 
+    displayItems(faceItems); 
 }
 
-document.getElementById("men").addEventListener("click", filterMen);
-function filterMen(){
-    let menItems=itemsData.filter(function(elem){
-        return elem.type=="men";
+document.getElementById("eye").addEventListener("click", filterEye);
+function filterEye(){
+    let eyeItems=itemsData.filter(function(elem){
+        return elem.type=="eye";
     })
     let count=0;
-    for(const key in menItems){
+    for(const key in eyeItems){
         count++;
     }
 
     document.getElementById("count").textContent=count;
-    displayItems(menItems); 
+    displayItems(eyeItems); 
+}
+
+document.getElementById("lip").addEventListener("click", filterLip);
+function filterLip(){
+    let lipsItems=itemsData.filter(function(elem){
+        return elem.type=="lip";
+    })
+    let count=0;
+    for(const key in lipsItems){
+        count++;
+    }
+
+    document.getElementById("count").textContent=count;
+    displayItems(lipsItems); 
 }
 
 function ratingFilter(){
     var selected=document.getElementById("rating").value;
     var filterItem;
     if(selected=="all"){
-        filterItem=fragranceItems;
+        filterItem=makeupItems;
     }
     else{
-        filterItem=fragranceItems.filter(function(elem){
+        filterItem=makeupItems.filter(function(elem){
             return elem.stars==selected;
         })
     }
@@ -72,7 +86,7 @@ function brandFilter(){
     var selected=document.getElementById("brand").value;
     var filterItem;
     if(selected=="all"){
-        filterItem=fragranceItems;
+        filterItem=makeupItems;
     }
     else{
         filterItem=itemsData.filter(function(elem){
@@ -93,15 +107,15 @@ function priceSort(){
     console.log(selected);
     var sortPrices;
     if(selected=="all"){
-        sortPrices=fragranceItems;
+        sortPrices=makeupItems;
     }
     else if(selected=="lth"){
-        sortPrices=fragranceItems.sort(function(a, b){
+        sortPrices=makeupItems.sort(function(a, b){
             return a.price-b.price;
         })
     }
     else if(selected=="htl"){
-        sortPrices=fragranceItems.sort(function(a, b){
+        sortPrices=makeupItems.sort(function(a, b){
             return b.price-a.price;
         })
     }

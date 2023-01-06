@@ -1,28 +1,28 @@
 var itemsData = [
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2518959-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "Rare Beauty by Selena Gomez",
-    name: "Soft Pinch Liquid Blush",
+    imageUrl: "https://www.sephora.com/productimages/sku/s2282804-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=164",
+    brand: "Sephora Collection",
+    name: "Clean Lip Balm & Scrub",
     stars: 4.5,
     numReviews: 2300,
-    price: 20,
+    price: 3.50,
     category: "makeup",
-    type: "face"
+    type: "lip"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2116028-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "Charlotte Tilbury",
-    name: "Hollywood Flawless Filter",
+    imageUrl: "https://www.sephora.com/productimages/sku/s2151686-main-zoom.jpg?pb=2020-03-sephora-value-2020&imwidth=164",
+    brand: "Sephora Collection",
+    name: "Lip Balm & Scrub",
     stars: 4.5,
     numReviews: 1700,
-    price: 15,
+    price: 4.20,
     category: "makeup",
-    type: "face"
+    type: "lip"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2428837-main-zoom.jpg?imwidth=270&pb=allure-clean-2020&imwidth=164",
-    brand: "ILIA",
-    name: "Super Serum Skin Tint SPF 40 Foundation",
+    imageUrl: "https://www.sephora.com/productimages/sku/s2515633-main-zoom.jpg?imwidth=164",
+    brand: "Estee Lauder",
+    name: "Double Wer Stay-in-Place Mattle Refillable Powder Foundation",
     stars: 4,
     numReviews: 2500,
     price: 48,
@@ -30,49 +30,49 @@ var itemsData = [
     type: "face"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s1478403-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "NARS",
-    name: "Radiant Creamy Concealer",
+    imageUrl: "https://www.sephora.com/productimages/sku/s1296060-main-zoom.jpg?pb=2020-03-sephora-value-2020&imwidth=164",
+    brand: "Sephora Collection",
+    name: "Cream Lip Stain Liquid Lipstick",
     stars: 4.5,
     numReviews: 12300,
     price: 13,
     category: "makeup",
-    type: "face"
+    type: "lip"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2551851-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "Charlotte Tilbury",
-    name: "Beautiful Skin Medium Coverage Liquid Foundation with Hyaluronic Acid",
+    imageUrl: "https://www.sephora.com/productimages/sku/s2372225-main-zoom.jpg?pb=2020-03-sephora-value-2020&imwidth=164",
+    brand: "Sephora Collection",
+    name: "Sephora Colorful Eyeshadow",
     stars: 4.5,
     numReviews: 287,
-    price: 44,
+    price: 3.50,
     category: "makeup",
-    type: "face"
+    type: "eye"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2431864-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "Fenty Beauty by Rihanna",
-    name: "Eaze Drop Blurring Skin Tint",
+    imageUrl: "https://www.sephora.com/productimages/sku/s2454783-main-zoom.jpg?imwidth=164",
+    brand: "Bare Minerals",
+    name: "Original Liquid Mineral Concealer",
     stars: 4,
     numReviews: 1100,
     price: 32,
     category: "makeup",
-    type: "face"
+    type: "lip"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2116333-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "Charlotte Tilbury",
-    name: "Airbrush Flawless Finish Setting Powder",
+    imageUrl: "https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?pb=2020-03-sephora-value-2020&imwidth=164",
+    brand: "Sephora Collection",
+    name: "Retractable Waterproof Eyeliner",
     stars: 4,
     numReviews: 1600,
-    price: 25,
+    price: 13,
     category: "makeup",
-    type: "face"
+    type: "eye"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2514586-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "NARS",
-    name: "Light Reflecting Advanced Skincare Foundation",
+    imageUrl: "https://www.sephora.com/productimages/sku/s2642502-main-zoom.jpg?imwidth=164",
+    brand: "Too Faced",
+    name: "Cloud Crush Blurring Blush",
     stars: 4.5,
     numReviews: 233,
     price: 49,
@@ -80,34 +80,34 @@ var itemsData = [
     type: "face"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2407294-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "Charlotte Tilbury",
-    name: "Mini Hollywood Flawless Filter",
+    imageUrl: "https://www.sephora.com/productimages/sku/s2422863-main-zoom.jpg?imwidth=164",
+    brand: "Estee Lauder",
+    name: "Fusturist Hydra Rescue Moisturizing Foundation SPF 45",
     stars: 4,
     numReviews: 218,
-    price: 15,
+    price: 50,
     category: "makeup",
     type: "face"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2362168-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "Rare Beauty by Selena Gomez",
-    name: "Positive Light Liquid Luminizer Highlight",
-    stars: 4.5,
+    imageUrl: "https://www.sephora.com/productimages/sku/s2474971-main-zoom.jpg?imwidth=164",
+    brand: "Tom Ford",
+    name: "Eye Color Quad Eyeshadow Palette",
+    stars: 5,
     numReviews: 634,
-    price: 22,
+    price: 90,
     category: "makeup",
     type: "face"
   },
   {
-    imageUrl: "https://www.sephora.com/productimages/sku/s2157659-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=164",
-    brand: "SEPHORA COLLECTION",
-    name: "Eye Love Eyeshadow Palette",
+    imageUrl: "https://www.sephora.com/productimages/sku/s1922541-main-zoom.jpg?imwidth=164",
+    brand: "Bare Minerals",
+    name: "Original Loose Powder Mineral Foundation SPF 15",
     stars: 4,
     numReviews: 468,
-    price: 10,
+    price: 35,
     category: "makeup",
-    type: "eye"
+    type: "face"
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2370773-main-zoom.jpg?imwidth=270&pb=2020-03-allure-best-2019&imwidth=164",
@@ -131,9 +131,9 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2288082-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "HUDA BEAUTY",
+    brand: "Huda Beauty",
     name: "Nude Obsessions Eyeshadow Palette",
-    stars: 4,
+    stars: 4.5,
     numReviews: 821,
     price: 29,
     category: "makeup",
@@ -141,7 +141,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s1987783-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "TOM FORD",
+    brand: "Tom Ford",
     name: "Eye Color Quad Eyeshadow Palette",
     stars: 4.5,
     numReviews: 200,
@@ -171,7 +171,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2419588-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "HUDA BEAUTY",
+    brand: "Huda Beauty",
     name: "Brown Obsessions Eyeshadow Palette",
     stars: 4.5,
     numReviews: 180,
@@ -183,7 +183,7 @@ var itemsData = [
     imageUrl: "https://www.sephora.com/productimages/sku/s2417905-main-zoom.jpg?imwidth=270&pb=allure-best-2021-badge&imwidth=164",
     brand: "Urban Decay",
     name: "24/7 Eyeshadow",
-    stars: 4.5,
+    stars: 5,
     numReviews: 181,
     price: 19,
     category: "makeup",
@@ -191,7 +191,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2191880-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "NARS",
+    brand: "Nars",
     name: "Mini Voyageur Eyeshadow Palette",
     stars: 4,
     numReviews: 92,
@@ -201,7 +201,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2255651-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=164",
-    brand: "SEPHORA COLLECTION",
+    brand: "Sephora Collection",
     name: "Jelly Melt Glossy Lip Tint",
     stars: 4.5,
     numReviews: 396,
@@ -211,7 +211,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s1296060-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=164",
-    brand: "SEPHORA COLLECTION",
+    brand: "Sephora Collection",
     name: "Cream Lip Stain Liquid Lipstick",
     stars: 4.5,
     numReviews: 10500,
@@ -221,9 +221,9 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s1691278-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=164",
-    brand: "SEPHORA COLLECTION",
+    brand: "Sephora Collection",
     name: "Retractable Rouge Gel Lip Liner",
-    stars: 4.5,
+    stars: 5,
     numReviews: 995,
     price: 9,
     category: "makeup",
@@ -231,7 +231,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2133528-main-zoom.jpg?imwidth=270&pb=2020-03-allure-best-2019&imwidth=164",
-    brand: "LANEIGE",
+    brand: "Laneige",
     name: "Lip Sleeping Mask",
     stars: 4.5,
     numReviews: 14400,
@@ -241,7 +241,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s1656032-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=164",
-    brand: "SEPHORA COLLECTION",
+    brand: "Sephora Collection",
     name: "Lip Liner To Go",
     stars: 4,
     numReviews: 719,
@@ -251,8 +251,8 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2148385-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=164",
-    brand: "SEPHORA COLLECTION",
-    name: "#LIPSTORIES Lipstick",
+    brand: "Sephora Collection",
+    name: "Lipstories Lipstick",
     stars: 4.5,
     numReviews: 3400,
     price: 9,
@@ -261,9 +261,9 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2553386-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "MAKEUP BY MARIO",
+    brand: "Makeup By Mario",
     name: "Moisture Glow™ Plumping Lip Serum",
-    stars: 4.5,
+    stars: 5,
     numReviews: 14,
     price: 22,
     category: "makeup",
@@ -273,7 +273,7 @@ var itemsData = [
     imageUrl: "https://www.sephora.com/productimages/sku/s2447043-main-zoom.jpg?imwidth=270&imwidth=164",
     brand: "Dior",
     name: "Dior Addict Lip Glow",
-    stars: 4.5,
+    stars: 5,
     numReviews: 1600,
     price: 35,
     category: "makeup",
@@ -323,7 +323,7 @@ var itemsData = [
     imageUrl: "https://www.sephora.com/productimages/sku/s2418663-main-zoom.jpg?imwidth=270&pb=allure-best-2021-badge&imwidth=164",
     brand: "Rare Beauty by Selena Gomez",
     name: "Stay Vulnerable Melting Cream Blush",
-    stars: 4.5,
+    stars: 5,
     numReviews: 651,
     price: 21,
     category: "makeup",
@@ -331,7 +331,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s248930-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "NARS",
+    brand: "Nars",
     name: "Blush",
     stars: 4.5,
     numReviews: 18000,
@@ -341,7 +341,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2257251-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=164",
-    brand: "MILK MAKEUP",
+    brand: "Milk Makeup",
     name: "Lip + Cheek Cream Blush Stick",
     stars: 4,
     numReviews: 781,
@@ -351,7 +351,7 @@ var itemsData = [
   },
   {
     imageUrl: "https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=164",
-    brand: "MILK MAKEUP",
+    brand: "Milk Makeup",
     name: "Matte Cream Bronzer Stick",
     stars: 4,
     numReviews: 1100,
@@ -1203,7 +1203,7 @@ var itemsData = [
     stars: 4.5,
     imageUrl: "https://www.sephora.com/productimages/sku/s2577443-main-zoom.jpg?imwidth=164",
     brand: "Sol de Janeiro",
-    name: "Brazilian Crush Cheirosa' 68 Beija Flor Hair & Body Rragrance Mist",
+    name: "Brazilian Crush Cheirosa' Rragrance Mist",
     numReviews: 804,
     price: 38,
     category: "fragrance",
@@ -1232,8 +1232,8 @@ var itemsData = [
   {
     stars: 4.5,
     imageUrl: "https://www.sephora.com/productimages/sku/s513168-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "CHANEL",
-    name: "COCO MADEMOISELLE Eau de Parfum",
+    brand: "Chanel",
+    name: "Coco Mademoiselle Eau de Parfum",
     numReviews: 804,
     price: 90,
     category: "fragrance",
@@ -1260,7 +1260,7 @@ var itemsData = [
     type: "men"
   },
   {
-    stars: 4.5,
+    stars: 5,
     imageUrl: "https://www.sephora.com/productimages/sku/s2593341-main-zoom.jpg?imwidth=164",
     brand: "Carolina Herrera",
     name: "Mini Good Girl Eau de Parfum",
@@ -1290,17 +1290,17 @@ var itemsData = [
     type: "women"
   },
   {
-    stars: 4.5,
+    stars: 5,
     imageUrl: "https://www.sephora.com/productimages/sku/s1930759-main-zoom.jpg?imwidth=270&imwidth=164",
     brand: "Sol de Janeiro",
-    name: "Brazilian Crush Cheirosa ’62 Bum Bum Hair & Body Fragrance Mist",
+    name: "Brazilian Crush Cheirosa ’ Fragrance Mist",
     numReviews: 1300,
     price: 20,
     category: "fragrance",
     type: "women"
   },
   {
-    stars: 4.5,
+    stars: 5,
     imageUrl: "https://www.sephora.com/productimages/sku/s2249738-main-zoom.jpg?imwidth=270&imwidth=164",
     brand: "Yves Saint Laurent",
     name: "Libre Eau De Parfum",
@@ -1313,7 +1313,7 @@ var itemsData = [
   {
     stars: 4.5,
     imageUrl: "https://www.sephora.com/productimages/sku/s2170686-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "CHANEL",
+    brand: "Chanel",
     name: "Chance Eau Tendre Eau de Parfum",
     numReviews: 195,
     price: 72,
@@ -1346,8 +1346,8 @@ var itemsData = [
   {
     stars: 5,
     imageUrl: "https://www.sephora.com/productimages/sku/s1695972-main-zoom.jpg?imwidth=270&imwidth=164",
-    brand: "CHANEL",
-    name: "BLEU DE CHANEL Eau de Parfum",
+    brand: "Chanel",
+    name: "Bleu De Chanel Eau de Parfum",
     numReviews: 186,
     price: 102,
     category: "fragrance",
@@ -1415,7 +1415,7 @@ var itemsData = [
     type: "men"
   },
   {
-    stars: 4,
+    stars: 4.5,
     imageUrl: "https://www.sephora.com/productimages/sku/s2471514-main-zoom.jpg?imwidth=270&imwidth=164",
     brand: "Maison Margiela",
     name: "'REPLICA' When the Rain Stops",
