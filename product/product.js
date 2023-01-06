@@ -20,12 +20,11 @@ var cartdata=[
     pName.innerText=elem.itemname;
     var pPrice=document.createElement("p");
     pPrice.innerText=elem.price;
-    document.querySelector("#page1").append(cName, pName, pPrice);
-    
     var cColor=document.createElement("h2");
     cColor.innerText=elem.color;
-    var pSize=document.createElement("p");
+    var pSize=document.createElement("h4");
     pSize.innerText=elem.size;
+    document.querySelector("#page1").append(cName, pName, pPrice,cColor,pSize);
 
 
 var metallic=document.createElement("p");
@@ -146,17 +145,17 @@ imgArr4.map(function (elem){
   
   
 
-var h2=document.createElement("p");
-h2.innerText="Find Your Shade";
-h2.style.color="blue";
-h2.style.fontSize="15px"
+// var h2=document.createElement("p");
+// h2.innerText="Find Your Shade";
+// h2.style.color="blue";
+// h2.style.fontSize="15px"
 
 document.querySelector(".btn").addEventListener("click",function(){
   addToCart(elem);
 })
 
 
-document.querySelector("#page2").append(cColor, pSize, metallic, topDiv, matte, bottomDiv, glitter, middleDiv, shimmer, endDiv, h2);
+document.querySelector("#page2").append(metallic, topDiv, matte, bottomDiv, glitter, middleDiv, shimmer, endDiv);
 })  //function ends
 
 function addToCart(elem){
@@ -167,8 +166,8 @@ function addToCart(elem){
   window.location="/cartPage/cart.html"  //cart location
 }
 
-var text=document.createElement("h2");
-text.innerText="Get It Shipped";
+// var text=document.createElement("h2");
+// text.innerText="Get It Shipped";
 
 /*----------------------------------product image------------------------------------*/
 var productImg1=["https://www.sephora.com/productimages/sku/s2372225-main-zoom.jpg?imwidth=612",
