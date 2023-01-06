@@ -203,3 +203,38 @@ section .card .image img{
 .swiper-button-prev:hover, .swiper-button-next:hover{
     color: black;
 }
+
+/* highlight */
+#div4{
+    display: flex;
+    justify-content: start;
+    height: 300px;
+    /* border: solid 2px black; */
+    margin-top: 30px;
+}
+#highlight{
+    /* border: solid 2px blue; */
+    margin-top: 10px;
+}
+
+#tag{
+    /* border: solid 2px red; */
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 100%;
+}
+#tag>div{
+    /* border: solid 2px green; */
+    display: flex;
+    height: 50px;
+}
+#tag>div>p{
+    /* border: solid 2px yellow; */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
