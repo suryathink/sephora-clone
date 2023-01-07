@@ -135,7 +135,7 @@
 
             <h5 id="new-account">New to Sephora?</h5>
 
-            <button id="createAccount">Create Account</button>
+            <button  id="createAccount">  Create Account</button>
         </div>
 
 
@@ -149,11 +149,10 @@
 </html>
 
 <script>
-// let loginEmail = docu 
-// 
-// loginEmail
-// loginPassword
 
+document.getElementById("createAccount").addEventListener("click",()=>{
+ window.location.href="suryaSignup.html";
+})
 
 
 document.querySelector("#customer-login").addEventListener("submit", signIn);
