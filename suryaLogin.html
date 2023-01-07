@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn-login {
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        /* original class loginform  */
+        .loginform {
+            width: 430px;
+            background-color: white;
+            padding: 30px 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 9;
+            box-shadow: 0px 0px 10px 3px #ccc;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+
+        .loginform input {
+            width: 100%;
+            margin-bottom: 15px;
+            height: 48px;
+            border: none;
+            padding-left: 10px;
+            border: 1px solid rgb(119, 101, 101);
+        }
+
+        .loginform button {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            width: 55%;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+
+
+        #spanlogin{
+            position: absolute;
+            right: 0px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            text-align: center;
+            color: black;
+            font-size: 32px;
+            text-align: center;
+            top: 0px;
+            line-height: 30px;
+        }
+
+
+        #forgot-password {
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #new-account {
+            margin-top: 30px;
+        }
+
+        #termscond {
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        #createAccount {
+            background-color: whitesmoke;
+            color: black;
+            padding: 10px 15px;
+            width: 55%;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body >
+
+    <div class="loginform">
+        <h4>Sign In</h4>
+        <br>
+        <p style="font-size: 14px;">Sign in or create an account
+            to enjoy <bold style="font-weight:bold">FREE standard
+                shipping </bold> on all orders.</p>
+        <br>
+        <form id="customer-login"  action="">
+            <div>
+                <input id="loginEmail" placeholder="Email Address*" type="email" required />
+            </div>
+
+            <div>
+                <input id="loginPassword" placeholder="Password*" type="password" required />
+            </div>
+
+            <div id="forgot-password">
+                <p><input style="width: 18px; height: 12px; color: black;" type="checkbox"> Keep me signed in</p>
+                <p> <a style="text-decoration: none;" href="#"> Forgot password?</a></p>
+            </div>
+          
+            <div>
+                <p id="wrongPass" style="text-align: center; color: red;"></p>
+            </div>
+            <br>
+
+            <button type="submit">Sign In</button>
+        </form>
+
+        <div>
+
+            <h5 id="new-account">New to Sephora?</h5>
+
+            <button id="createAccount">Create Account</button>
+        </div>
+
+
+        <div id="termscond">
+            <p><a href="#"> Terms of Use </a> & <a href="#"> Privacy Policy</a></p>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+// let loginEmail = docu 
+// 
+// loginEmail
+// loginPassword
+
+
+
+document.querySelector("#customer-login").addEventListener("submit", signIn);
+
+var nameArr = JSON.parse(localStorage.getItem("account-data")) || [];
+
+
+function signIn() {
+    event.preventDefault();
+    let mail = document.getElementById("loginEmail").value;
+    let pass = document.getElementById("loginPassword").value;
+
+    nameArr.filter(function (elem) {
+        return elem.mail == mail
+    }).map(function (elem) {
+        if (elem.pass == pass) {
+            document.getElementById("wrongPass").textContent = "Sign in Successful"
+ 
+            // write code to redirect to home page
+
+
+
+            // document.getElementById("showUsername").textContent = "Logged in as  "+mail+" ";
+;
+          console.log(elem);
+            // showEmailUser  
+            // document.getElementById("showEmailUser").textContent = elem.firstName+" "; 
+
+            
+            // storing emailID as user 
+            localStorage.setItem("user",elem.firstName)  
+            console.log(localStorage.getItem("user")); 
+        } else {
+            document.getElementById("wrongPass").textContent = "Wrong Credentials"
+        }
+    })
+
+    // hompage redirect js.
+    document.getElementById("loginEmail").value = null;
+    document.getElementById("loginPassword").value = null;
+
+}
+
+
+
+
+
+</script>
