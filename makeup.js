@@ -1,3 +1,6 @@
+import navbar from "./script/component.js";
+document.querySelector("header").innerHTML=navbar();
+
 var items=JSON.parse(localStorage.getItem("itemsData"))||[];
 var makeupItems=itemsData.filter(function(elem){
     return elem.category=="makeup";
@@ -148,6 +151,14 @@ function displayItems(arr){
         price.textContent="$ "+el.price;
         div_price_rating.append( rating, price)
         div.append(img, brand, name,div_price_rating);
+        div.addEventListener("click", function(){
+            purchaseItem(el);
+        })
         container.append(div);
     });
+    
+    function purchaseItem(el){
+        localStorage.setItem("proItem", JSON.stringify(items));
+        window.location.href="./product/product.html"
+    }
 }
