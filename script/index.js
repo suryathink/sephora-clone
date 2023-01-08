@@ -3,7 +3,7 @@
 let namexyz = localStorage.getItem("user");
 
 if (namexyz!=null){
-  document.getElementById("HomeSignIn").innerText="Hi" + namexyz;
+  document.getElementById("HomeSignIn").innerText="Hi " + namexyz;
 }
 
 

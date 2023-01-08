@@ -214,19 +214,6 @@
             <button type="submit" style="margin-bottom: 10px;">Join Now</button>
         </form>
 
-
-<!-- 
-        <div>
-            <p style="font-size: 12px;">By clicking “Join Now” you acknowledge that you are a U.S. or Canada resident
-                and (1) have read Sephora's
-                Privacy Policy and Notice of Financial Incentive, (2), agree to Terms of Use, Beauty Insider Terms, and
-                to automatically receive Beauty Insider offers and notifications via email.
-            </p>
-            <br>
-            <p style="font-size: 12px;">Sephora uses Google ReCaptcha and by registering, users are subject to Google's
-                privacy policy & terms.</p>
-
-        </div> -->
     </div>
 </body>
 
@@ -236,7 +223,8 @@
 
 document.querySelector("#createAccountForm").addEventListener("submit", myForm);
 
-var nameArr = JSON.parse(localStorage.getItem("account-data")) || [];
+var nameArr = JSON.parse(localStorage.getItem("account-data")) || []
+
 
 function myForm() {
       event.preventDefault();
@@ -256,7 +244,8 @@ function myForm() {
         alert("Fill All Details")
       } else {
         nameArr.push(obj);
-        alert("Account Created Successfully, You will be redirected to login Page!")
+        alert("Account Created Successfully, You will be redirected to Login Page!")
+        window.location.href= "suryaLogin.html"
       }
   
   
@@ -273,9 +262,11 @@ function myForm() {
       document.getElementById("day").value="";
       document.getElementById("zipcode").value=null;
 
-
-  window.location.href="suryaLogin.html"
+     
+//   window.location.href="suryaLogin.html"
     }
+
+    </script>
 
 
 
