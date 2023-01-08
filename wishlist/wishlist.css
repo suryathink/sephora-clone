@@ -1,9 +1,23 @@
-.Add1{
+#default {
+    text-align: center;
+}
+
+
+#product{
+    display: block;
+}
+
+#product1{
+    /* border: 1px black solid; */
+    /* width: 100%; */
     margin-top: 10px;
     display: flex;
     font-family: 'Open Sans', sans-serif;
+    justify-content: space-around;
+    margin-bottom: 40px;
 }
-.Add1>img{
+
+#product1>img{
     margin-right: 15px;
    display: flex;
    flex-direction: column;
@@ -11,19 +25,20 @@
    text-align: center;
 }
 
-.shipping{
+.wishlist{
     background-color: white;
     /* border: 2px solid red; */
     height: auto;
     padding: 10px 15px;
 }
 
-.flex{
+#likhai{
     position: relative;
+    display: flex;
 }
 
 
-.flex>div:nth-child(2)
+#likhai>div:nth-child(2)
 {
     position: absolute;
     top: -2px;
@@ -32,7 +47,7 @@
     flex-direction: column;
     align-items: center;
 }
-.flex button{
+#butt{
    border-radius: 20px;
    width: 200px;
    /* height: 40px;
@@ -42,4 +57,32 @@
     margin-top: 10px;
     background-color: red;
     color: white
+}
+#buttheart{
+    border: none;
+    background-color: white;
+    margin-left: 20px;
+}
+#part1{
+    display: flex;
+
+}
+#part1a {
+    margin-left: 20px;
+}
+#name {
+    font-size: 14px; 
+    margin-bottom: -2px; 
+}
+#detail{
+    font-size: 14px;
+}
+#item{
+    font-size: 12px;
+}
+#price{
+    font-weight: bold;
+}
+#buttheart{
+    font-size:24px;color:red; 
 }

@@ -1,69 +1,66 @@
 
+  var wishData=JSON.parse(localStorage.getItem("wishData")) || [];  
+  var cartproduct=JSON.parse(localStorage.getItem("cartproduct")) || [];
 
+              // *** total price
+   
 
+    // var cartdata=JSON.parse(localStorage.getItem("cartdata")) || [];  
+    // console.log(cartdata);
 
-
-
- // =========================================//
-                // Calculating total price//
-    //==========================================//
-
-    var cartdata=JSON.parse(localStorage.getItem("cartDataObj")) || [];  
-
-    var total = cartdata.reduce(function (sum, el) {
+    var total = cartproduct.reduce(function (sum, el) {
         return sum + Number(el.price);
       }, 0);
     
     console.log(total)
     
-    var length = cartdata.length;
+    var length = cartproduct.length;
     
     console.log(length)
     
     
-    document.querySelector("#subtotal").innerText = "$" + total
+    document.querySelector("#subtotal2a").innerText = "$" + total
     
     
     document.querySelector("#total").innerText = "$" + total
     
-    //===========================//
-        // promo code
-    //===========================//
-    //===========================//
     
     
     
     
     
+    //**promo code */
     
+    cart(cartproduct);
     
-    
-    var itmprice=JSON.parse(localStorage.getItem("FinalPrice")) || [];
-    
-    cartdata.map(function(el,index){
+    var FinalPrice=JSON.parse(localStorage.getItem("FinalPrice")) || [];
+
+    function cart(cartproduct){
+
+      document.querySelector(".cart").innerHTML="";
+      cartproduct.map(function(el,index){
       
-      if(cartdata.length>=1)
-      {
-        document.querySelector(".cart").innerHTML="";
-      }
+      // if(cartproduct.length>=1)
+      // {
+      //   document.querySelector(".cart").innerHTML="";
+      // }
     
     
-    
-        // =========================================//
-                    //checkout button//
-        //==========================================//
-         if(length>=1){
-            document.getElementById("checkoutButton").style.backgroundColor = "#ce0404";
-            document.getElementById("COI").style.color= "white";
-            document.getElementById("COI").style.textDecoration= "none";
-        }
+        //checkout**   
+
+
+        //  if(length>=1){
+        //     document.getElementById("butta").style.backgroundColor = "#ce0404";
+        //     document.getElementById("COI").style.color= "white";
+        //     document.getElementById("COI").style.textDecoration= "none";
+        // }
     
         
     
         // firstdiv
         var imgdiv=document.createElement("div");
         imgdiv.setAttribute("class", "imgdiv");
-    
+       
         // second div
         var cartdiv=document.createElement("div");
         cartdiv.setAttribute("class","cartdiv")
@@ -79,7 +76,8 @@
         cartdiv.append(detaildiv,pricediv);
     
         var img =document.createElement("img")
-        img.src=el.image
+        img.src=el.image;
+       
         img.setAttribute("class","img");
     
         imgdiv.append(img);
@@ -95,7 +93,9 @@
         var p2=document.createElement("p");
         p2.setAttribute("class","secondP");
         p2.innerText=el.itemname;
-    
+        // p2.innerText=el.detail;
+
+
         var p3=document.createElement("p")
         p3.setAttribute("class","thirdP")
         p3.innerText=el.size;
@@ -106,7 +106,7 @@
     
         var p5=document.createElement("p")
         p5.setAttribute("class","fifthP")
-        p5.innerText=el.p;
+        p5.innerText=el.price;
     
         var p6= document.createElement("div")
         p6.setAttribute("class","remove")
@@ -130,7 +130,7 @@
         option5.innerText="5"
     
         select.append(option1,option2,option3,option4,option5)
-    
+        
         // =======================================================================//
     
         var remove=document.createElement("button")
@@ -171,27 +171,34 @@
     
     
         document.querySelector(".cart").append(maindiv,hr);
-    
-        document.querySelector(".select").addEventListener("click", changePrice);
+    ////
+    /////
+    /////
+    ////
+        // document.querySelector(".select").addEventListener("click", changePrice);
+       select.addEventListener("click", changePrice);
     function changePrice(){
          
         var selectedQuantity = document.querySelector(".select").value;
     
-        document.querySelector("#subtotal").innerText = "$" + (selectedQuantity*el.price + (total-el.price))
-        
-        
-        
-        document.querySelector("#total").innerText = "$" + (selectedQuantity*el.price + (total-el.price))
+        document.getElementById("subtotal2a").innerText = "$" + (selectedQuantity*el.price + (total-el.price))
+      
+        // document.querySelector("#total").innerText = "$" + (selectedQuantity*el.price + (total-el.price))
     
         
-        
+        document.getElementById("total").innerText = "$" + (selectedQuantity*el.price+(total-el.price));
+
         var finalValue =  selectedQuantity*el.price + (total-el.price)
         console.log(finalValue);
     
-        itmprice.push(finalValue)
+        FinalPrice.push(finalValue)
     
-        localStorage.setItem("FinalPrice",JSON.stringify(itmprice))
-      
+        localStorage.setItem("FinalPrice",JSON.stringify(FinalPrice))
+
+        //////promo code
+
+
+       
         
     }
     
@@ -199,12 +206,13 @@
     
     function removeItem(el,index){
       console.log(el,index)
-        cartdata.splice(index,1)
-        localStorage.setItem("cartDataObj",JSON.stringify(cartdata));
+      cartproduct.splice(index,1)
+        localStorage.setItem("cartproduct",JSON.stringify(cartproduct));
         window.location.reload();
     }
     
+  }
     
+
     
-    
-    
+     

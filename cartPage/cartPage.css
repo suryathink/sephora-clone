@@ -1,17 +1,17 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
+ } */
    
- .insideBasket{
+ .carta{
     gap: 32px;
     grid-template-columns: 1fr 318px;
     display: grid;
  }
 
   /* MAIN */
- .BasketPage{
+ .cartPage{
     width: 68%;
     margin: auto;
     /* border: 2px solid black; */
@@ -19,37 +19,37 @@
     /* padding: 5px; */
  }
 
- .Credit-img{
+ .creditcimg{
      width: 20px;
      height: 20px;
      margin-right: 22px;
  }
 
- .save{
+ .credimg{
     font-family: 'Open Sans', sans-serif;
      display: flex;
      align-items: center;
      justify-content: space-between;
      padding: 0px 8px;
  }
- .save1{
+ .credimga{
      display: flex;
      align-items: center;
      
  }
 
- .save1>p{
+ .credimga>p{
      font-size: 13px;
      color: rgb(0, 0, 0);
      line-height: 18px;
  }
 
- .credit-section1{
+ .cardb{
     border: 1px solid rgb(206, 204, 204);
     border-radius: 6px;
     height: auto;
     width: 100%;
-    padding: 15px 25px;
+    padding: 1px 10px;
     margin: auto;
  }
 
@@ -69,7 +69,7 @@
      font-size: 14px;
  }
 
- .Details{
+ .seedetail{
     font-family: 'Open Sans', sans-serif;
      border: 2.2px solid black;
      background-color: white;
@@ -80,13 +80,13 @@
 
  }
 
- .TC{
+ .terms{
     font-family: 'Open Sans', sans-serif;
      font-size: 12px;
      line-height: 15px;
  }
 
- .insideBasket1{
+ .cartb{
      background-color: rgb(234, 234, 238);
      height: auto;
      width: 100%;
@@ -95,7 +95,7 @@
      margin-top: 10px;
  }
 
- .ship1>img{
+ .sa>img{
      width: 25px;
      height: 25px;
      margin-right: 10px;
@@ -107,7 +107,7 @@
      height: auto;
      padding: 10px 15px;
  }
- .ship1{
+ .sa{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
      display: flex;
@@ -173,12 +173,12 @@
     margin-top: 15px;
  }
 
- .product1{
+ .proda{
      margin-top: 10px;
      display: flex;
      font-family: 'Open Sans', sans-serif;
  }
- .product1>img{
+ .proda>img{
      margin-right: 15px;
     display: flex;
     flex-direction: column;
@@ -212,12 +212,12 @@
  /* ============================================================================ */
  /* ============================================================================ */
  /* ============================================================================ */
-.Payment-section{
+.paisa-lendeina{
     margin-top: 30px;
     font-family: 'Open Sans', sans-serif;
 }
 
- .first-Payment-section{
+ .Payment-firsta{
      width: 100%;
      margin: auto;
      border: 1px solid rgb(230, 227, 227);
@@ -234,7 +234,7 @@
     cursor: pointer;
  }
 
- .payment-button>button{
+ .paymentbutt>button{
      cursor: pointer;
      border-radius: 25px;
      font-size: 14px;
@@ -250,7 +250,7 @@
     margin-bottom: 10px;
  }
 
- .btn-img{
+ .buttime{
     width: 100px;
     height: 100px;
    margin-top : -45px ;
@@ -267,7 +267,7 @@
      margin-bottom: 15px;
  }
 
- .second-payment-section{
+ .Payment-firstb{
     
     width: 100%;
     margin: auto;
@@ -275,21 +275,21 @@
     padding: 15px;
     border-radius: 6px;
  }
- .view-offers{
+ .offa{
      font-size: 12px;
      display: flex;
      justify-content: right;
      margin-bottom: 10px;
  }
 
- .enterPromoCode>input{
+ .plzpromo>input{
      width: 100%;
-    padding: 16px 22px;
+    padding: 16px 4px;
     border: 1px solid rgb(230, 227, 227);
     border-radius: 6px;
  }
 
- .canada-checkout>button{
+ .canadaa>button{
      display: flex;
      justify-content: center;
      align-items: center;
@@ -297,12 +297,12 @@
      background-color: white;
      
  }
- .canada-checkout{
+ .canadaa{
     width: 100%;
     margin: auto;
     padding: 15px;
  }
- .canada-checkout2{
+ .canadab{
     font-family: 'Open Sans', sans-serif;
     border: 1px solid rgb(230, 227, 227);
     border-radius: 6px;
@@ -312,25 +312,25 @@
     margin-bottom: 15px;
  }
 
- .CC1{
+ .cana{
      display: flex;
      align-items: center;
  }
 
- .CC1>div>p:nth-child(1){
+ .cana>div>p:nth-child(1){
     font-weight: 700;
  }
 
- .CC1>div>p:nth-child(2){
+ .cana>div>p:nth-child(2){
     font-size: 12px;
  }
 
- .CC2{
+ .canb{
     display: flex;
     margin-left: 50px;
     justify-content: space-around;
  }
- .CC2>button{
+ .canb>button{
      width: 90%;
      padding: 8px 20px;
      border-radius: 50px;
@@ -338,14 +338,14 @@
      background-color: white;
  }
 
- .CC2>#gift{
+ .canb>#present{
     font-size: 14px;
      padding: 6px 8px;
      border-radius: 6px;
      border: 1px solid rgb(230, 227, 227);
  }
 
- .assist{
+ .end{
      font-family: 'Open Sans', sans-serif;
     border: 1px solid rgb(230, 227, 227);
     border-radius: 6px;
@@ -353,23 +353,23 @@
     margin: auto;
     padding: 15px;
  }
- .assist>div>span>img{
+ .end>div>span>img{
      width: 35px;
      height: 40px;
  }
- .assist>p:nth-child(1){
+ .end>p:nth-child(1){
      font-weight: bold;
      margin-bottom: 20px;
  }
- .assist>p:nth-child(2){
+ .end>p:nth-child(2){
     font-size: 14px;
      margin-bottom: 5px;
  }
- .assist>p:nth-child(3){
+ .end>p:nth-child(3){
     font-size: 14px;
      margin-bottom: 10px;
  }
- .assist>p:nth-child(4){
+ .end>p:nth-child(4){
     font-size: 13px;
      margin-bottom: 10px;
  }
@@ -455,7 +455,7 @@
     border:1px solid rgb(224, 222, 222);
 }
 
-.enterPromoCode>button{
+.plzpromo>button{
     margin-top: 30px;
     width: 100%;
     padding: 8px 20px;
