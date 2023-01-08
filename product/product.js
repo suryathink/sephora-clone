@@ -3,10 +3,10 @@ var cartdata=[
         image:"https://www.sephora.com/productimages/sku/s2372225-main-zoom.jpg?pb=2020-03-sephora-value-2020&imwidth=230",
         brand:"SEPHORA COLLECTION",
         itemname:"Sephora ColorfulⓇ Eyeshadow",
-        size: "Size 0.042 oz/ 1.2g",
-        color:"Color: 365 Glazed Donut",
+        size: "0.042 oz/ 1.2g",//Size 0.042 oz/ 1.2g
+        color:"365 Glazed Donut",//Color: 365 Glazed Donut
         p:"shipping restrictions",
-        price:"$9.00"
+        price:9.00//$9.00
     }
 ]
   
@@ -19,11 +19,11 @@ var cartdata=[
     var pName=document.createElement("h2");
     pName.innerText=elem.itemname;
     var pPrice=document.createElement("p");
-    pPrice.innerText=elem.price;
+    pPrice.innerText="$"+elem.price;
     var cColor=document.createElement("h2");
-    cColor.innerText=elem.color;
-    var pSize=document.createElement("h4");
-    pSize.innerText=elem.size;
+    cColor.innerText="Color: "+elem.color;
+    var pSize=document.createElement("h2");
+    pSize.innerText="Size: "+elem.size;
     document.querySelector("#page1").append(cName, pName, pPrice,cColor,pSize);
 
 
@@ -142,18 +142,14 @@ imgArr4.map(function (elem){
   img.src=elem
   endDiv.append(img);
 })
-  
-  
-
-// var h2=document.createElement("p");
-// h2.innerText="Find Your Shade";
-// h2.style.color="blue";
-// h2.style.fontSize="15px"
 
 document.querySelector(".btn").addEventListener("click",function(){
   addToCart(elem);
 })
 
+document.querySelector(".wishlist").addEventListener("click",function(){
+  addToWishlist(elem);
+})
 
 document.querySelector("#page2").append(metallic, topDiv, matte, bottomDiv, glitter, middleDiv, shimmer, endDiv);
 })  //function ends
@@ -163,11 +159,15 @@ function addToCart(elem){
   editcartData.push(elem);
   localStorage.setItem("cartDataObj", JSON.stringify(editcartData));
   alert("Item Added to Basket");
-  window.location="/cartPage/cart.html"  //cart location
+  window.location="cartPage.html"  //cart location
 }
-
-// var text=document.createElement("h2");
-// text.innerText="Get It Shipped";
+function addToWishlist(elem){
+  console.log(elem);
+  editcartData.push(elem);
+  localStorage.setItem("cartDataObj", JSON.stringify(editcartData));
+  alert("Added to wishlist");
+  window.location="cartPage.html"  //whishlist location
+}
 
 /*----------------------------------product image------------------------------------*/
 var productImg1=["https://www.sephora.com/productimages/sku/s2372225-main-zoom.jpg?imwidth=612",
