@@ -142,13 +142,6 @@ imgArr4.map(function (elem){
   img.src=elem
   endDiv.append(img);
 })
-  
-  
-
-// var h2=document.createElement("p");
-// h2.innerText="Find Your Shade";
-// h2.style.color="blue";
-// h2.style.fontSize="15px"
 
 document.querySelector(".btn").addEventListener("click",function(){
   addToCart(elem);
@@ -157,7 +150,6 @@ document.querySelector(".btn").addEventListener("click",function(){
 document.querySelector(".wishlist").addEventListener("click",function(){
   addToWishlist(elem);
 })
-
 
 document.querySelector("#page2").append(metallic, topDiv, matte, bottomDiv, glitter, middleDiv, shimmer, endDiv);
 })  //function ends
@@ -176,9 +168,6 @@ function addToWishlist(elem){
   alert("Added to wishlist");
   window.location="cartPage.html"  //whishlist location
 }
-
-// var text=document.createElement("h2");
-// text.innerText="Get It Shipped";
 
 /*----------------------------------product image------------------------------------*/
 var productImg1=["https://www.sephora.com/productimages/sku/s2372225-main-zoom.jpg?imwidth=612",
@@ -231,82 +220,3 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-
-// whishlist
-// var wish1 = document.querySelectorAll('.add-wishlist');
-
-// for(let i=0; i<wish1.length; i++) {
-// 	wish1[i].addEventListener('click', () => {
-// 		Wishh(latest_products[i]);
-// 		pdt_wishh(latest_products[i])
-// 	})
-// }
-
-
-// function pdt_wishh(product) {
-// 	var wish_pdt = localStorage.getItem('productsInWishlist');
-// 	wish_pdt = JSON.parse(wish_pdt);
-
-// 	if(wish_pdt != null) {
-// 		if(wish_pdt[product.tag] == undefined) {
-// 			wish_pdt = {
-// 				...wish_pdt,
-// 				[product.tag]: product
-// 			}
-// 		}
-// 	}
-// 	else {
-// 		wish_pdt = {
-// 			[product.tag]: product
-// 		}
-// 	}
-// 	localStorage.setItem("productsInWishlist", JSON.stringify(wish_pdt));
-// }
-
-// function Wishh() {
-// 	var tot_wish = localStorage.getItem('wishlist');
-// 	tot_wish = JSON.parse(tot_wish);
-// 	tot_wish += 1;
-// 	localStorage.setItem('wishlist',JSON.stringify(tot_wish));
-// }
-
-
-// //function myFunction() {
-// //	document.getElementsByClassName('wsh').style.color = 'red';
-// //}
-
-// function delette(x) {
-// 	var wish_pdt = localStorage.getItem('productsInWishlist');
-// 	wish_pdt = JSON.parse(wish_pdt);
-// 	delete wish_pdt[x];
-// 	localStorage.setItem("productsInWishlist", JSON.stringify(wish_pdt));
-// 	displayWishlist();
-// }
-
-
-// function displayWishlist() {
-// 	let wishItems = localStorage.getItem("productsInWishlist");
-// 	wishItems = JSON.parse(wishItems);
-// 	let productContainer = document.querySelector(".wList");
-
-// 	if(wishItems && productContainer) {
-// 		productContainer.innerHTML = '';
-// 		Object.values(wishItems).map(item => {
-// 			productContainer.innerHTML += `
-// 			<div class="product">
-// 				<img src="./images/${item.tag}.png">
-// 				<span>${item.name}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
-// 				<div class="price">
-// 					<span>&#8377</span>${item.price}
-// 				</div>
-// 				<div>
-// 					<span><i class="fa fa-times" style="color:#123C69" onclick="delette('${item.tag}')"></i></span>
-// 				</div>
-// 			</div>
-// 			`;
-// 		});
-// 	}
-// }
-
-// displayWishlist();
