@@ -121,7 +121,8 @@ let nevbar =()=>{
     <!-- </div> -->
     <div id="middle-div">
         <div id="mid-nav-div">
-            <img src="https://www.sephora.com/img/ufe/logo.svg" alt="" id="logo">
+           
+        <a href="index.html">  <img  src="https://www.sephora.com/img/ufe/logo.svg" alt="" id="logo"></a> 
         </div>
         <!-- <div> -->
         <input type="text" class="icon" placeholder="Search" id="search">
