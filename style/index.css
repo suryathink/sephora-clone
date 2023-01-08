@@ -1,7 +1,29 @@
 * {
     font-family: Helvetica;
     /* width: 100%; */
+    /* margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; */
+
+}html,body{
+       margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+
 }
+/* #check{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+    
+} */
 
 #upper-container {
     /* max-width: 100%; */
@@ -77,6 +99,12 @@
 .container::-webkit-scrollbar {
     display: none;
 }
+.container>div {
+    transition: 0.3s;
+  }
+  .container>div:hover {
+    transform: translate(0, -10px);
+  }
 
 .container>div {
     /* border: 2px solid red; */
@@ -145,57 +173,61 @@
     padding-left: 14px;
 }
 
-/* /* /* #fake-div {
+ .fake-div {
     display: flex;
     /* border: 2px solid black; */
-    /* margin: 2% 8% 0.5% 8%;
+     margin: 2% 8% 0.5% 8%;
     padding: 3% 4px;
+    overflow-x: auto;
     box-shadow: rgba(243, 238, 238, 0.05) 0px 6px 24px 0px, rgba(137, 134, 134, 0.08) 0px 0px 0px 1px;
-}  */
+} 
+.fake-div::-webkit-scrollbar{
+    display: none;
+}
 
-/* #fake-div>div {
+.fake-div>div {
     /* border: 2px solid rebeccapurple; */
-    /* margin: 20px 50px 20px 3px; */
-    /* width: 400px; */
+    margin: 20px 20px 20px 3px;
+    width: 400px;
 
-/* }  */
+ } 
 
-/* #fake-div>div>h3 {
+.fake-div>div>h3 {
     font-size: 20px;
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 3%;
-} */
+}
 
-/* #fake-div>div>p {
+.fake-div>div>p {
     margin: 1% 4%;
     font-size: 14px;
     line-height: 1.3;
 
-} */
+}
 
-/* #fake-div>div>h4 {
+.fake-div>div>h4 {
     margin: 3% 4%;
 
-} */
+}
 
-/* #fake-div img {
-    width: 400px;
+.fake-div img {
+    width: 390px;
     height: 128px;
-} */
+}
 
-/* .fake-div1 {
-    /* margin: 20px 10px 20px 2px; */
-    /* padding: 20px; */
-    /* margin-right: 2.6%;
+ .fake-div1 {
+    margin: 20px 10px 20px 2px;
+    padding: 20px;
+     margin-right: 2.6%;
     background-color: rgba(25, 235, 235, 0.399);
 } 
 
-/* .fake-div2 {
+.fake-div2 {
     background-color: rgb(213, 174, 76);
     margin-right: 2.6%;
-} */
+}
 
-/* .fake-div3 {
+.fake-div3 {
     background-color: rgba(45, 158, 203, 0.259);
-} */ 
+} 
