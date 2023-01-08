@@ -4,11 +4,11 @@ document.getElementById("main").innerHTML =nevbar();
 let name = localStorage.getItem("user");
 console.log(name)
 
-if (name!=null){
-document.getElementById("hoverName").textContent = "Good Evening, "+name;
-document.getElementById("HomeSignIn").textContent = name;
-document.getElementById("HomePara").textContent  ="";
-}
+// if (name!=null){
+// document.getElementById("hoverName").textContent = "Good Evening, "+name;
+// document.getElementById("HomeSignIn").textContent = name;
+// document.getElementById("HomePara").textContent  ="";
+// }
 
 
 
