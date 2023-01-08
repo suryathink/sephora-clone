@@ -1,5 +1,20 @@
 
 
+let namexyz = localStorage.getItem("user");
+
+if (namexyz!=null){
+  document.getElementById("HomeSignIn").innerText="Hi" + namexyz;
+}
+
+
+
+
+
+
+
+
+
+
 let arr1 = [{
     imageUrl: "https://www.sephora.com/productimages/sku/s2518959-main-zoom.jpg?imwidth=270&imwidth=164",
     brand: "Rare Beauty by Selena Gomez",
@@ -419,4 +434,5 @@ let arr1 = [{
   Display1(arr1)
   Display2(arr2)
   Display3(arr3)
-  
+
+ 
