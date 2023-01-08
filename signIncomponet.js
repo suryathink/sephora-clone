@@ -7,8 +7,8 @@ function signIn(){
                         src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4"
                         id="beauty"></div>
                 <div id="paraDiv">
-                    <p id="bold">Good Evening, Beautiful. 👋</p>
-                    <p>Sign in for a more personalized experience</p>
+                    <p id="hoverName" id="bold">Good Evening, Beautiful. 👋</p>
+                    <p id="hoverNull" >Sign in for a more personalized experience</p>
                 </div>
             </div>
             <div class="btnFlx">
