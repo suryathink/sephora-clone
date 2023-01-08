@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn-login {
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+      
+
+        .loginform {
+            width: 430px;
+            background-color: white;
+            padding: 30px 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 9;
+            box-shadow: 0px 0px 10px 3px #ccc;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+            border-radius: 5px;
+
+        }
+
+        .loginform input {
+            width: 100%;
+            margin-bottom: 15px;
+            height: 35px;
+            border: none;
+            padding-left: 10px;
+            border: 1px solid rgb(119, 101, 101);
+        }
+
+        .loginform button {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            width: 55%;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .loginform span {
+            position: absolute;
+            right: 0px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            /* background-color: green; */
+            text-align: center;
+            color: black;
+            font-size: 32px;
+            text-align: center;
+            top: 0px;
+            line-height: 30px;
+        }
+
+
+        #forgot-password {
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #new-account {
+            margin-top: 30px;
+        }
+
+
+
+        #createAccount {
+            background-color: whitesmoke;
+            color: black;
+            padding: 10px 15px;
+            width: 55%;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #signUpName,
+        #monthYear {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        #month {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        #month > select {
+            height: 35px;
+            font-size: 14px;
+            border: 1px solid rgb(200, 198, 198);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div  class="loginform">
+        <h4 style="text-align: center;">Create an Account</h4>
+        <br>
+        <img style="width: 45%;" src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg"
+            alt="BeautyINSIDER-logo">
+        <p style="font-size: 14px;">Join the Beauty Insider loyalty program. Earn points, get <bold
+                style="font-weight:bold">FREE standard
+                shipping, </bold> redeem rewards, and more.</p>
+        <br>
+        <form id="createAccountForm" action="">
+
+            <div id="signUpName">
+                <input id="CreateAccountFirstName" placeholder=" First Name " type="text" required />
+                <input id="Creat_LastName" placeholder="Last Name " type="text" required />
+
+            </div>
+            <div>
+                <input id="CreateAccountEmail" placeholder="Email Address" type="email" required />
+            </div>
+
+            <div>
+                <input id="Creat_Password" placeholder="Password (6 to 12 characters)" type="password" required />
+            </div>
+
+            <div>
+                <input id="phone-number" placeholder="Phone Number (Optional)" type="number" />
+            </div>
+
+            <div>
+                <h4> <img style="width: 4%; height: 4%; padding-bottom: -11px;;"
+                        src="https://www.sephora.com/img/ufe/icons/birthday.svg" alt=""> Enter your birthdate to receive
+                    a free gift every year.</h4>
+            </div>
+
+            <div id="month">
+                <select name="" id="year-month">
+                    <option value="">Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March </option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October </option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+
+                </select>
+
+                <select name="" id="day">
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3 </option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 </option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15 </option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22 </option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27 </option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <input id="zipcode" type="number" placeholder="ZIP Code (to hear about store events near you)">
+            </div>
+
+
+            <button type="submit" style="margin-bottom: 10px;">Join Now</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+
+document.querySelector("#createAccountForm").addEventListener("submit", myForm);
+
+var nameArr = JSON.parse(localStorage.getItem("account-data")) || []
+
+
+function myForm() {
+      event.preventDefault();
+      var obj = {
+        mail: document.getElementById("CreateAccountEmail").value,
+        firstName: document.getElementById("CreateAccountFirstName").value,
+        lastName: document.getElementById("Creat_LastName").value,
+        pass: document.getElementById("Creat_Password").value,
+        phone:document.getElementById("phone-number").value,  
+        month:document.getElementById("year-month").value,
+        day:document.getElementById("day").value,
+        phone:document.getElementById("zipcode").value,
+
+    }
+      console.log(obj);
+      if (obj.lastName == "" || obj.mail == "" || obj.pass == "" || obj.firstName == "") {
+        alert("Fill All Details")
+      } else {
+        nameArr.push(obj);
+        alert("Account Created Successfully, You will be redirected to Login Page!")
+        window.location.href= "suryaLogin.html"
+      }
+  
+  
+  
+      localStorage.setItem("account-data", JSON.stringify(nameArr));
+  
+  
+      document.getElementById("CreateAccountEmail").value = null ;
+      document.getElementById("CreateAccountFirstName").value = null;
+      document.getElementById("Creat_LastName").value = null;
+      document.getElementById("Creat_Password").value=null;
+      document.getElementById("phone-number").value=null;
+      document.getElementById("year-month").value="";
+      document.getElementById("day").value="";
+      document.getElementById("zipcode").value=null;
+
+     
+//   window.location.href="suryaLogin.html"
+    }
+
+    </script>
+
+
+

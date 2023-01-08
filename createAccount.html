@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn-login {
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            /* background: rgba(0, 0, 0, 0.5); */
+            z-index: -1;
+            opacity: 0;
+            /* transition: 1s; */
+        }
+
+        .loginform {
+            width: 430px;
+            background-color: white;
+            padding: 30px 20px;
+            position: absolute;
+            left: 50%;
+            top: -50%;
+            z-index: 9;
+            box-shadow: 0px 0px 10px 3px #ccc;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+            border-radius: 5px;
+
+        }
+
+        .loginform input {
+            width: 100%;
+            margin-bottom: 15px;
+            height: 35px;
+            border: none;
+            padding-left: 10px;
+            /* border: 1px solid whitesmoke; */
+        }
+
+        .loginform button {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            width: 55%;
+            border-radius: 25px;
+        }
+
+        .loginform span {
+            position: absolute;
+            right: 0px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            /* background-color: green; */
+            text-align: center;
+            color: black;
+            font-size: 32px;
+            text-align: center;
+            top: 0px;
+            line-height: 30px;
+        }
+
+        .showoverlay {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .showloginform {
+            top: 50%;
+        }
+
+        #forgot-password {
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #new-account {
+            margin-top: 30px;
+        }
+
+
+
+        #createAccount {
+            background-color: whitesmoke;
+            color: black;
+            padding: 10px 15px;
+            width: 55%;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #signUpName,
+        #monthYear {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        #month {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        #month > select {
+            height: 35px;
+            font-size: 14px;
+            border: 1px solid rgb(200, 198, 198);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Create Account Modal</h2>
+    <button class="btn-login">Create Account</button>
+
+    <div class="overlay" onclick="closeModal()"></div>
+    <div class="loginform">
+        <span> &times; </span>
+        <h4 style="text-align: center;">Create an Account</h4>
+        <br>
+        <img style="width: 45%;" src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg"
+            alt="BeautyINSIDER-logo">
+        <p style="font-size: 14px;">Join the Beauty Insider loyalty program. Earn points, get <bold
+                style="font-weight:bold">FREE standard
+                shipping, </bold> redeem rewards, and more.</p>
+        <br>
+        <form action="">
+
+            <div id="signUpName">
+                <input placeholder=" First Name " type="text" required />
+                <input placeholder="Last Name " type="text" required />
+
+            </div>
+            <div>
+                <!-- <label for="">Username</label> -->
+                <input placeholder="Email Address" type="text" required />
+            </div>
+
+            <div>
+                <!-- <label for="">Password</label> -->
+                <input placeholder="Password (6 to 12 characters)" type="password" required />
+            </div>
+
+            <div>
+                <!-- <label for="">Password</label> -->
+                <input placeholder="Phone Number (Optional)" type="number" />
+            </div>
+
+            <div>
+                <h4> <img style="width: 4%; height: 4%; padding-bottom: -11px;;"
+                        src="https://www.sephora.com/img/ufe/icons/birthday.svg" alt=""> Enter your birthdate to receive
+                    a free gift every year.</h4>
+            </div>
+
+            <div id="month">
+                <select name="" id="">
+                    <option value="">Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March </option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October </option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+
+                </select>
+
+                <select name="" id="">
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3 </option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 </option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15 </option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22 </option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27 </option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <input type="number" placeholder="ZIP Code (to hear about store events near you)">
+            </div>
+
+
+            <button style="margin-bottom: 10px;">Join Now</button>
+        </form>
+
+
+
+        <div>
+            <p style="font-size: 12px;">By clicking “Join Now” you acknowledge that you are a U.S. or Canada resident
+                and (1) have read Sephora’s
+                Privacy Policy and Notice of Financial Incentive, (2), agree to Terms of Use, Beauty Insider Terms, and
+                to automatically receive Beauty Insider offers and notifications via email.
+            </p>
+            <br>
+            <p style="font-size: 12px;">Sephora uses Google ReCaptcha and by registering, users are subject to Google's
+                privacy policy & terms.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+
+    let showModal = () => {
+        document.querySelector(".overlay").classList.add("showoverlay")
+        document.querySelector(".loginform").classList.add("showloginform")
+
+    }
+
+    let closeModal = () => {
+        document.querySelector(".overlay").classList.remove("showoverlay")
+        document.querySelector(".loginform").classList.remove("showloginform")
+
+    }
+
+
+
+    let btnlogin = document.querySelector(".btn-login");
+
+    btnlogin.addEventListener("click", showModal)
+
+
+    let close = document.querySelector("span");
+
+    close.addEventListener("click", closeModal)
+</script>
