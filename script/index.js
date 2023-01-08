@@ -1,4 +1,5 @@
-
+ import { footer } from "./component.js"
+ document.getElementById("footer").innerHTML = footer();
 
 let namexyz = localStorage.getItem("user");
 
@@ -375,6 +376,7 @@ let arr1 = [{
 
       let title = document.createElement("p");
       title.innerText = ele.name;
+      
 
       box.append(photo,brand,title);
       document.getElementById("container").append(box);

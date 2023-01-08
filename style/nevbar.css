@@ -112,7 +112,7 @@ strong {
 .fa-solid {
     font-size: 26px;
     margin: 0% 8%;
-    color:rgb(12, 12, 12)
+    /* color:rgb(12, 12, 12) */
 }
 
 /* lower nav css */
@@ -120,6 +120,7 @@ strong {
 #navBar {
   width: 100%;
   background-color: #151415;
+  
 
   position: sticky;
   top: -2px;
@@ -139,6 +140,7 @@ strong {
 }
 .nav ul {
   position: relative;
+  display:flex;
   /* z-index: 100; */
 }
 
@@ -148,6 +150,8 @@ strong {
   font-size: 12px;
   color: white;
   font-weight: bold;
+  /* min-width: 40px; */
+  /* max-width: 100%; */
   /* z-index: 100; */
   /* position: relative; */
 }
@@ -199,7 +203,24 @@ ul li a {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 1200px) {
+/* Medium screens */
+@media all and (min-width: 401px) and (max-width: 800px) {
+  
+    #navBar{
+      display: none;
+    }
+
+  
+}
+/* Small screens */
+@media all and (min-width: 100px) and (max-width: 400px) {
+  body{
+
+  }
+}
+
+
+/* @media only screen and (max-width: 1200px) {
   #topBar div:nth-child(2) > p i {
     display: none;
   }
@@ -216,4 +237,4 @@ ul li a {
     width: 90%;
     margin: auto;
   }
-}
+} */
