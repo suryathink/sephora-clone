@@ -187,7 +187,7 @@
 
 .fake-div>div {
     /* border: 2px solid rebeccapurple; */
-    margin: 20px 20px 20px 3px;
+    margin: 20px 50px 20px 3px;
     width: 400px;
 
  } 
@@ -219,13 +219,13 @@
  .fake-div1 {
     margin: 20px 10px 20px 2px;
     padding: 20px;
-     margin-right: 2.6%;
+     margin-right: 3.8%;
     background-color: rgba(25, 235, 235, 0.399);
 } 
 
 .fake-div2 {
     background-color: rgb(213, 174, 76);
-    margin-right: 2.6%;
+    margin-right: 3.6%;
 }
 
 .fake-div3 {

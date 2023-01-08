@@ -379,6 +379,9 @@ let arr1 = [{
       
 
       box.append(photo,brand,title);
+      box.addEventListener("click",()=>{
+        localdata(ele);
+      })
       document.getElementById("container").append(box);
 
 
@@ -401,6 +404,9 @@ let arr1 = [{
       tag.innerText = "NEW";
 
       box.append(tag,photo,brand,title);
+       box.addEventListener("click",()=>{
+        localdata(ele);
+      })
       document.getElementById("container2").append(box);
 
 
@@ -436,5 +442,9 @@ let arr1 = [{
   Display1(arr1)
   Display2(arr2)
   Display3(arr3)
+  const localdata=(data)=>{
+
+    localStorage.setItem("cartDataObj",JSON.stringify(data));
+  }
 
  

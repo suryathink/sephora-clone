@@ -2,6 +2,9 @@
     margin: 0;
     /* width: 100%; */
 }
+div:hover{
+  cursor: pointer;
+}
 
 #upper-div {
     border: 4px solid black;
@@ -15,6 +18,10 @@
     padding: 20px;
     margin: 0;
 
+}
+#signInDiv>a{
+  text-decoration: none;
+  color: #151415;
 }
 
 #logo {
@@ -127,11 +134,16 @@ strong {
   /* z-index: 100; */
 }
 
+#navBar > i {
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  display: none;
+  z-index: 100;
+}
 .nav {
-  max-width:80%;
+  max-width: 1180px;
   margin: auto;
-  /* margin-right: 0.5%; */
-  /* margin-left: 8%; */
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
@@ -140,8 +152,7 @@ strong {
 }
 .nav ul {
   position: relative;
-  display:flex;
-  /* z-index: 100; */
+  z-index: 100;
 }
 
 .nav ul li {
@@ -150,17 +161,36 @@ strong {
   font-size: 12px;
   color: white;
   font-weight: bold;
-  /* min-width: 40px; */
-  /* max-width: 100%; */
-  /* z-index: 100; */
+  z-index: 100;
   /* position: relative; */
 }
 .nav > ul > li > a {
   color: white;
 }
+.nav ul li i {
+  padding-left: 5px;
+  font-size: 14px;
+}
 .nav ul li:hover {
-  background-color: #262525;
+  background-color: #1e1c1d;
   color: white;
+}
+.nav button {
+  padding: 16px 45px;
+  border: none;
+  background-color: #282627;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn2 {
+  padding: 16px 45px;
+  border: none;
+  background-color: #151414;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
 }
 
 .navData {
@@ -175,7 +205,6 @@ strong {
   visibility: hidden;
   opacity: 0;
   transition: 0.2s;
-  /* display: none; */
 }
 .nav > ul > li:hover .navData {
   visibility: visible;
@@ -192,35 +221,17 @@ strong {
 }
 .navData a,
 ul li a {
-  color: #171517;
+  color: #292728;
   text-decoration: none;
   font-size: 12px;
 }
 .navData > div > a {
-  color: rgb(11, 11, 11);
+  color: rgb(55, 54, 54);
   padding-bottom: 10px;
   display: inline-block;
-  font-size: 16px;
 }
 
-/* Medium screens */
-@media all and (min-width: 401px) and (max-width: 800px) {
-  
-    #navBar{
-      display: none;
-    }
-
-  
-}
-/* Small screens */
-@media all and (min-width: 100px) and (max-width: 400px) {
-  body{
-
-  }
-}
-
-
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   #topBar div:nth-child(2) > p i {
     display: none;
   }
@@ -237,4 +248,38 @@ ul li a {
     width: 90%;
     margin: auto;
   }
-} */
+}
+@media only screen and (max-width: 900px) {
+  #topBar div:nth-child(2) > p {
+    display: none;
+  }
+  #topBar div:nth-child(3) > span {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  #navBar {
+    display: flex;
+    justify-content: space-between;
+  }
+  #navBar > i {
+    display: block;
+  }
+  .nav ul li {
+    font-size: 12px;
+  }
+  .btn2 {
+    display: block;
+    align-items: right;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #topBar div:nth-child(2) {
+    display: none;
+  }
+  #topBar div:nth-child(3) > i {
+    border: none;
+  }
+}
