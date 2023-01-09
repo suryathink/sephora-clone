@@ -1,3 +1,9 @@
+import navbar from ("./script/component.js");
+document.querySelector("header").innerHTML=navbar();
+import { footer } from "../script/component";
+document.querySelector("footer").innerHTML=footer();
+
+
 var cartdata=[
     {
         image:"https://www.sephora.com/productimages/sku/s2372225-main-zoom.jpg?pb=2020-03-sephora-value-2020&imwidth=230",

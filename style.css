@@ -7,10 +7,10 @@
 
 #container{
     display: flex;
-    width: 90%;
+    width: 90%;    
     margin: auto;
-    margin-top: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
 #categories{
     line-height: 35px;
