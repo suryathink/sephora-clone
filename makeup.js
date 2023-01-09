@@ -1,5 +1,5 @@
-import navbar from "./script/component.js";
-document.querySelector("header").innerHTML=navbar();
+import nevbar from "./script/component.js";
+document.querySelector("header").innerHTML=nevbar();
 import { footer} from "./script/component.js";
 document.querySelector("footer").innerHTML=footer();
 
