@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "helvetica neue", sans-serif;
+        }
+
+        .mainListDiv::-webkit-scrollbar {
+            width: 0.4vw;
+        }
+
+        /* Track */
+        .mainListDiv::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        .mainListDiv::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 10px;
+        }
+
+        #hovMainDiv {
+            width: 19vw;
+            height: auto;
+            border: 1px solid #ccc;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: black;
+        }
+
+        #bold {
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .btyDIV {
+            display: flex;
+            box-sizing: border-box;
+            padding: 1vh;
+            font-size: 1.6vh;
+            line-height: 2.5vh;
+        }
+
+        #paraDiv {
+            box-sizing: border-box;
+            padding: 1vh 0.3vw;
+        }
+
+        #beauty {
+            width: 3.2vw;
+            height: auto;
+        }
+
+        .btnFlx {
+            display: flex;
+            justify-content: space-evenly;
+            box-sizing: border-box;
+            padding: 0.8vh;
+        }
+
+        .btnFlx>button {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 7.76vw;
+            height: 4vh;
+            font-size: 1.36vh;
+            font-weight: bold;
+        }
+
+        .btnFlx>button:nth-child(2) {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .mainListDiv {
+            width: 19vw;
+            height: auto;
+            overflow-y: scroll;
+            /* overflow-x: hidden; */
+            line-height: 1.7vh;
+            height: 60vh;
+            border: 0.1px solid #ccc;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .mainListDiv>div {
+            border-bottom: 0.1px solid #ccc;
+            font-size: 1.8vh;
+            height: 8.2vh;
+            color: #000000;
+        }
+
+        .firstFlx {
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            padding: 0 1vw;
+            align-items: center;
+            font-size: 1.5vh;
+            line-height: 2.5vh;
+        }
+
+        #logoOFsepgora {
+            width: 3.2vw;
+        }
+
+        .firstFlx>div>p:nth-child(2) {
+            color: rgb(102, 102, 102);
+            font-size: 1.6vh;
+        }
+
+        .firstFlx>div>p:nth-child(1):hover {
+            text-decoration: underline;
+        }
+
+        .secondFlx {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            cursor: pointer;
+            padding: 0 1vw;
+            font-size: 1.5vh;
+            line-height: 2.5vh;
+        }
+
+        .secondFlx>p:nth-child(2) {
+            color: rgb(102, 102, 102);
+        }
+
+        .secondFlx>p:nth-child(1):hover {
+            text-decoration: underline;
+        }
+
+        .listFlx {
+            display: flex;
+            padding-top: 1.64vh;
+            cursor: pointer;
+            padding-left: 0.78vw;
+            font-size: 1.8vh;
+            line-height: 2vh;
+        }
+
+        .listFlx>div>img {
+            width: 1.87vw;
+            height: 3.94vh;
+
+            margin-right: 0.7vw;
+        }
+
+        .listFlx>div:nth-child(2)>p:nth-child(2) {
+            color: rgb(102, 102, 102);
+            font-size: 1.5vh;
+        }
+
+        .listFlx>div:nth-child(2)>p:nth-child(1):hover {
+            text-decoration: underline;
+        }
+
+        #signOut {
+            text-decoration: underline;
+            padding-left: 0.78vw;
+            padding-top: 1.64vh;
+        }
+
+        .mainListDiv::-webkit-scrollbar {
+            width: 0.4vw;
+        }
+
+        /* Track */
+        .mainListDiv::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        .mainListDiv::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 10px;
+        }
+
+        #hovMainDiv {
+            width: 19vw;
+            height: auto;
+            border: 1px solid #ccc;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: black;
+        }
+
+        #bold {
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .btyDIV {
+            display: flex;
+            box-sizing: border-box;
+            padding: 1vh;
+            font-size: 1.6vh;
+            line-height: 2.5vh;
+        }
+
+        #paraDiv {
+            box-sizing: border-box;
+            padding: 4% 8% ;
+            
+            /* padding: 1vh 0.3vw; */
+            font-size: 14px;
+        }
+
+        #beauty {
+            width: 3.2vw;
+            height: auto;
+        }
+
+        .btnFlx {
+            display: flex;
+            justify-content: space-evenly;
+            box-sizing: border-box;
+            padding: 0.8vh;
+        }
+
+        .btnFlx>button {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 7.76vw;
+            height: 4vh;
+            font-size: 1.36vh;
+            font-weight: bold;
+        }
+
+        .btnFlx>button:nth-child(2) {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .mainListDiv {
+            width: 19vw;
+            height: auto;
+            overflow-y: scroll;
+            /* overflow-x: hidden; */
+            line-height: 1.7vh;
+            height: 60vh;
+            border: 0.1px solid #ccc;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .mainListDiv>div {
+            border-bottom: 0.1px solid #ccc;
+            font-size: 1.8vh;
+            height: 8.2vh;
+            color: #000000;
+        }
+
+        .firstFlx {
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            padding: 0 1vw;
+            align-items: center;
+            font-size: 1.5vh;
+            line-height: 2.5vh;
+            margin: px;
+        }
+
+        #logoOFsepgora {
+            width: 3.2vw;
+        }
+
+        .firstFlx>div>p:nth-child(2) {
+            color: rgb(102, 102, 102);
+            font-size: 1.6vh;
+        }
+
+        .firstFlx>div>p:nth-child(1):hover {
+            text-decoration: underline;
+        }
+
+        .secondFlx {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            cursor: pointer;
+            padding: 0 1vw;
+            font-size: 1.5vh;
+            line-height: 2.5vh;
+        }
+
+        .secondFlx>p:nth-child(2) {
+            color: rgb(102, 102, 102);
+        }
+
+        .secondFlx>p:nth-child(1):hover {
+            text-decoration: underline;
+        }
+
+        .listFlx {
+            display: flex;
+            padding-top: 1.64vh;
+            cursor: pointer;
+            padding-left: 0.78vw;
+            font-size: 1.8vh;
+            line-height: 2vh;
+        }
+
+        .listFlx>div>img {
+            width: 1.87vw;
+            height: 3.94vh;
+            margin-right: 0.7vw;
+        }
+
+        .listFlx>div:nth-child(2)>p:nth-child(2) {
+            color: rgb(102, 102, 102);
+            font-size:14px;
+        }
+
+        .listFlx>div:nth-child(2)>p:nth-child(1):hover {
+            text-decoration: underline;
+        }
+
+        #signInHover{
+            width: 300px;
+        }
+
+        .btyDIV img{
+            margin: 17% 0 0 17%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="signInHover">
+        <div id="hovMainDiv">
+            <div class="btyDIV">
+                <div><img
+                        src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4"
+                        id="beauty"></div>
+                <div id="paraDiv">
+                    <p id="putusername" id="bold">Good Evening, Beautiful. 👋</p>
+                    <p id="makeitnull" >Sign in for a more personalized experience</p>
+                </div>
+            </div>
+            <div class="btnFlx">
+               <a href="suryaLogin.html"> <button id="hoversignin">Sign In</button></a>
+               <a href="suryaSignup.html"> <button id="hoverCreateAccount">Create Account</button></a>
+            </div>
+        </div>
+        <div class="mainListDiv">
+            <div class="firstFlx">
+                <div>
+                    <p>Beauty Insider Summary</p>
+                    <p>View activity, savings, benefits</p>
+                </div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/bi/logo-bi-stacked.svg">
+                </div>
+            </div>
+            <div class="secondFlx">
+                <p>Rewards Bazaar</p>
+                <p>Redeem items, samples, more</p>
+            </div>
+            <div class="listFlx">
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/subscription.svg">
+                </div>
+                <div>
+                    <p>Buy it Again</p>
+                    <p>Reorder from in-store and online purchases</p>
+                </div>
+            </div>
+            <div class="listFlx">
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/track.svg">
+                </div>
+                <div>
+                    <p>Orders</p>
+                    <p>View & track online or pickup orders</p>
+                </div>
+            </div>
+            <div class="listFlx">
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/heart.svg">
+                </div>
+                <div>
+                    <p>Loves</p>
+                    <p>View saved Products</p>
+                </div>
+            </div>
+            <div class="listFlx">
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/account.svg">
+                </div>
+                <div>
+                    <p>Account Settings</p>
+                    <p>Payment, contact info, addresses, password</p>
+                </div>
+            </div>
+            <div class="listFlx">
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/cc-outline.svg">
+                </div>
+                <div>
+                    <p>Sephora Credit Card Program</p>
+                    <p>Apply now</p>
+                </div>
+            </div>
+            <div class="listFlx">
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/flash.svg">
+                </div>
+                <div>
+                    <p>Flash</p>
+                    <p>Unlimited 1-2 Day Shipping Subscription </p>
+                </div>
+            </div>
+            <div class="listFlx">
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/reservations.svg">
+                </div>
+                <div>
+                    <p>Reservations</p>
+                    <p>Manage your services, classes, events</p>
+                </div>
+            </div>
+            <div class="listFlx">
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/traits.svg">
+                </div>
+                <div>
+                    <p>Beauty Traits and Color iQ</p>
+                    <p>Complete your beauty traits for personalized recommendations</p>
+                </div>
+            </div>
+            <div class="listFlx">
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/recommendations.svg">
+                </div>
+                <div>
+                    <p>Beauty Advisor Recommendations</p>
+                    <p>Recommendations from your store visits</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
