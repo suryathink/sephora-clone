@@ -161,8 +161,11 @@ function displayItems(arr){
         container.append(div);
     });
 }
+var cartData=[];
 function addItem(el){
-    itemsData.push(el);
-    localStorage.setItem("item", JSON.stringify(itemsData));
+    
+    cartData.push(el);
+    console.log(cartData);
+    localStorage.setItem("cartDataObj", JSON.stringify(cartData));
     window.location.href="./product/product.html";
 }
