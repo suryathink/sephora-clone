@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Fragrance | Sephora</title>
+
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div id="container">
+       <div id="sideWall">
+            <p>Fragrance</p>
+            <div id="categories">
+                <h2 id="fragrance">Fragrance</h2>
+                <p id="women">Women</p>
+                <p id="men">Men</p>
+                <p>Value & Gift Sets</p>
+                <p>Candles & Home Scents</p>
+                <p>Shop by Fragrance Family</p>
+                <p>Vegan</p>
+                <p>Mini Size</p><br>
+            </div>
+            <div id="filter">
+                <p>Filters</p>
+                <select>
+                    <option>Pickup & Delivery</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Formulation</option>
+                </select>
+                <hr>
+                
+                <select id="rating" onchange="ratingFilter()">
+                    <option value="all">Rating</option>
+                    <option value="4.5">below 5 stars</option>
+                    <option value="5">5 stars</option>
+                </select>
+                <hr>
+                <select id="brand" onchange="brandFilter()">
+                    <option value="all">Brand</option>
+                    <option value="Sol de Janeiro">Sol de Janeiro</option>
+                    <option value="Versace">Versace</option>
+                    <option value="Chanel">Chanel</option>
+                    <option value="Maison">Maison</option>
+                    <option value="Dior">Dior</option>                    
+                    <option value="Carolina">Carolina</option>
+                    <option value="Viktor&Rolf">Viktor&Rolf</option>                    
+                    <option value="Sol de Janeiro">Sol de Janeiro</option>
+                    <option value="Versace">Versace</option>
+                    <option value="The 7 Virtues">The 7 Virtues</option>
+                    <option value="TOM FORD">TOM FORD</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Concerns</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Fragrance Family</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Fragrance Type</option>
+                </select>
+                <hr>
+                <select>
+                    <option>new</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Sale</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Shopping Preferences</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Size</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Ingredient Preferences</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Hair Type</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Skin Type</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Age Range</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Price Range</option>
+                </select>
+            </div>                
+        </div>
+        <div id="mid">
+            <div id="tag">
+                <div>
+                    <p>New</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg">
+                </div>
+                <div>
+                    <p>Bestseller</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg">
+                </div>
+                <div>
+                    <p>Clean</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/Icon_Vegan.svg">
+                </div>
+                <div>
+                    <p>Vegan</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg">
+                </div>
+                <div>
+                    <p>Mini Size</p>
+                    <img src="https://www.sephora.com/contentimages/meganav/icons/Hairtype_Curly.svg">
+                </div>
+                <div>
+                    <p>Fragrance Quiz</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/fragrance_quiz.svg" alt="">
+                </div>
+                <div>
+                    <p>Clean Fragrance Guide</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_guide.svg" alt="">
+                </div>
+                <div>
+                    <p>Fragrance Notes Guide</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/fragrances_guide.svg" alt="">
+                </div>
+                <div>
+                    <p>Niche Fragrances</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/niche_fragrances.svg" alt="">
+                </div>
+                <div>
+                    <p>Best Perfume $45 and Under</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/under_45.svg" alt="">
+                </div>
+            </div>
+            <div id="sortDiv">
+                <div id="resultsCount">
+                    <p><span id="count"></span>&nbsp; Results</p>
+                </div>
+                <div id="sort">
+                    <label for="sort">Sort By:</label>
+                    <select onchange="priceSort()" id="selectSort">                        
+                        <option value="all">Relevance</option>
+                        <option value="lth">Price Low to High</option>
+                        <option value="htl">Price High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <div id="items"></div>
+        </div>
+        
+
+    </div>
+    <footer>
+
+    </footer>
+</body>
+<script src="./data.js"></script>
+<script src="./frigrance.js"></script>
+<script src="https://kit.fontawesome.com/8bc2958a7c.js" crossorigin="anonymous"></script>
+</html>
