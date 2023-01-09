@@ -1,4 +1,5 @@
 var itemsData = [
+  
     {
       imageUrl: "https://www.sephora.com/productimages/sku/s2282804-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=164",
       brand: "Sephora Collection",
