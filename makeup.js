@@ -149,14 +149,20 @@ function displayItems(arr){
         else{
             rating.innerHTML=`<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`+" "+el.stars;
         }
+        rating.setAttribute("class", "rating");
         
         var price=document.createElement("p");
         price.textContent="$ "+el.price;
         div_price_rating.append( rating, price)
         div.append(img, brand, name,div_price_rating);
         div.addEventListener("click", function(){
-            window.location.href("./product/product.html");
+            addItem(el);
         })
         container.append(div);
     });
+}
+function addItem(el){
+    itemsData.push(el);
+    localStorage.setItem("item", JSON.stringify(itemsData));
+    window.location.href="./product/product.html";
 }
