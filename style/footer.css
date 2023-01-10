@@ -1,0 +1,129 @@
+
+#footer{
+    margin-top: 40px;
+    padding-top: 50px;
+    background-color: black;
+    color: azure;
+    padding-bottom: 60px;
+}
+.fa-map-location-dot, .fa-comments, .fa-android,.fa-mobile-screen-button, .fa-credit-card{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+
+}
+
+.btm{
+color: azure;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+padding-left: 10%;
+padding-right: 10%;
+
+}
+.btm>div{
+display: flex;
+font-size: small;
+line-height: 15px;
+
+}
+.line{
+background-color: grey;
+width: 78%;
+height: 0.5px;
+margin-top: 50px;
+margin-left: 10%;
+margin-bottom: 20px;
+
+}
+#big{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+margin-left: 10%;
+margin-right: 10%;
+
+}
+
+.txt{
+margin-top: 10px;
+display: flex;
+justify-content: left;
+align-items: center; 
+}
+.txt>img{
+width: 30px; 
+height: 30px;
+margin-right: 10px;
+}
+
+#email{
+height: 30px;
+border-radius: 5px;
+}
+#btn{
+    font-weight: bold;
+    padding: 5px 10px;
+background-color: black;
+color: azure;
+border-radius: 15px;
+border: 2px solid white;
+}
+#newsflex{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+/* #newsflex{
+
+border: 1px solid white;
+width: 100%;
+} */
+
+#newsflex>h1{
+text-align: left;
+}
+#news>div{
+    margin-top: 8px;
+    display: flex;
+}
+
+#news>div>input{
+    width: 60%;
+    margin-right: 10px;
+}
+
+#pri{
+display: flex;
+flex-wrap: wrap;
+
+
+}
+#pri>p{
+    font-size: 12px;
+
+}
+#last{
+display: flex;
+flex-wrap: wrap;
+}
+
+#last>div>p{
+font-size: 13px;
+}
+.social{
+height: 30px;
+width: 30px;
+}
+#soc{
+margin-left: 34%;
+}
+
+.one>p{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.one>h4{
+   margin-top: 20px;
+}
