@@ -2,4 +2,4 @@
 
 Deployed Link https://suryathink.github.io/sephora-clone/
 
-<img src="sephora"/>
+<img src="sephora.png"/>
