@@ -445,6 +445,5 @@ let arr1 = [{
   const localdata=(data)=>{
 
     localStorage.setItem("cartDataObj",JSON.stringify(data));
+    // window.location.href="./product/product.html"
   }
-
- 

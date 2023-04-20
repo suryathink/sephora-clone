@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/nevbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Makeup | Sephora</title>
+
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div id="container">
+       <div id="sideWall">
+            <p>Makeup</p>
+            <div id="categories">
+                <h2 id="makeup">Makeup</h2>
+                <p id="face">Face</p>
+                <p id="eye">Eye</p>
+                <p id="lip">Lip</p>
+                <p>Cheek</p>
+                <p>Value & Gift Sets</p>
+                <p>Makeup Palettes</p>
+                <p>Brushes & Applicators</p>
+                <p>Accessories</p>
+                <p>Nail</p>
+                <p>Vegan</p>
+                <p>Mini Size</p><br>
+            </div>
+            <div id="filter">
+                <p>Filters</p>
+                <select>
+                    <option>Pickup & Delivery</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Ingredient Preferences</option>
+                </select>
+                <hr>
+                
+                <select id="rating" onchange="ratingFilter()">
+                    <option value="all">Rating</option>
+                    <option value="4.5">below 5 stars</option>
+                    <option value="5">5 stars</option>
+                </select>
+                <hr>
+                <select id="brand" onchange="brandFilter()">
+                    <option value="all">Brand</option>
+                    <option value="Sephora Collection">Sephora Collection</option>
+                    <option value="Estee Lauder">Estee Lauder</option>
+                    <option value="Too Faced">Too Faced</option>
+                    <option value="Tom Ford">Tom Ford</option>
+                    <option value="Bare Minerals">Bare Minerals</option>                    
+                    <option value="Kaja">Kaja</option>
+                    <option value="Urban Decay">Urban Decay</option>                    
+                    <option value="Huda Beauty">Huda Beauty</option>
+                    <option value="Violet Voss">Dior</option>
+                    <option value="Dior">Versace</option>
+                    <option value="Nars">Nars</option>
+                    <option value="Laneige">Laneige</option>
+                    <option value="Makeup By Mario">Makeup By Mario</option>
+                    <option value="Makeup By Mario">Makeup By Mario</option>
+                    <option value="Charlotte Tilbury">Charlotte Tilbury</option>
+                    <option value="Fenty Beauty by Rihanna">Fenty Beauty by Rihanna</option>
+                    <option value="Rare Beauty by Selena Gomez">Rare Beauty by Selena Gomez</option>
+                    <option value="Milk Makeup">Milk Makeup</option>
+                    <option value="Benefit Cosmetics">Benefit Cosmetics</option>
+                    <option value="Tower 28 Beauty">Tower 28 Beauty</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Concerns</option>
+                </select>
+                <hr>
+                <select>
+                    <option>New</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Sale</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Benefits</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Formulation</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Skin Type</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Color Family</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Finish</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Shopping Preferences</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Coverage</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Size</option>
+                </select>
+                <hr>
+                <select>
+                    <option>Age Range</option>
+                </select>
+                <select>
+                    <option>Sun Protections</option>
+                </select>
+                <select>
+                    <option>Price Range</option>
+                </select>
+                <select>
+                    <option>Volume</option>
+                </select>
+                <select>
+                    <option>Type</option>
+                </select>
+                <select>
+                    <option>Bristle Type</option>
+                </select>
+            </div>                
+        </div>
+        <div id="mid">
+            <div id="tag">
+                <div>
+                    <p>New</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg">
+                </div>
+                <div>
+                    <p>Bestseller</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg">
+                </div>
+                <div>
+                    <p>Clean</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/Icon_Vegan.svg">
+                </div>
+                <div>
+                    <p>Vegan</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg">
+                </div>
+                <div>
+                    <p>Mini Size</p>
+                    <img src="https://www.sephora.com/contentimages/meganav/icons/Hairtype_Curly.svg">
+                </div>
+                <div>
+                    <p>Lip Quiz</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/lip_quiz.svg" alt="">
+                </div>
+                <div>
+                    <p>Fragrance Quiz</p>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/foundation_quiz.svg" alt="">
+                </div>
+                
+                <div>
+                    <p>Cruelty-Free</p>
+                    <img src="https://www.sephora.com/contentimages/meganav/icons/CrueltyFreeupdated.svg" alt="">
+                </div>
+                
+            </div>
+            <div id="sortDiv">
+                <div id="resultsCount">
+                    <p><span id="count"></span>&nbsp; Results</p>
+                </div>
+                <div id="sort">
+                    <label for="sort">Sort By:</label>
+                    <select id="selectSort" onchange="priceSort()">                        
+                        <option value="all">Relevance</option>
+                        <option value="lth">Price Low to High</option>
+                        <option value="htl">Price High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <div id="items"></div>
+        </div>
+        
+
+    </div>
+    <footer></footer>
+</body>
+<script src="./data.js"></script>
+<script type="module" src="./makeup.js"></script>
+<script src="https://kit.fontawesome.com/8bc2958a7c.js" crossorigin="anonymous"></script>
+</html>
